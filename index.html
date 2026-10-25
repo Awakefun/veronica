@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/fonts.css">
+  <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  
+  <title>VERONICA — профессиональная эстетическая косметология</title>
+</head>
+<body>
+  <header>
+    <nav class="header__nav">
+      <button class="header__menu" type="button" aria-label="Открыть меню">
+        <img class="header__icon" src="./icons/menu.svg" alt="">
+      </button>
+      <a class="header__logo" href="./index.html">
+        <img src="./images/veronica_logo.svg" alt="Логотип Veronica">
+      </a>
+      <button class="header__search" type="button" aria-label="Открыть поиск">
+        <img class="header__icon" src="./icons/search.svg" alt="">
+      </button>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <img class="hero__image" src="./images/hero_mobile.webp" alt="Модель">
+      <div class="hero__content">
+        <p class="hero__pretext">профессиональная эстетическая косметология</p>
+        <h1 class="hero__title">Наука о красоте. Искусство естественности.</h1>
+        <p class="hero__description">Препараты и профессиональный уход VERONICA для специалистов эстетической медицины.</p>
+        <a class="hero__button" href="#products">
+          <span>Смотреть продукцию</span>
+          <img class="hero__button-icon" src="./icons/arrow-right.svg" alt="" width="18" height="18">
+        </a>
+        <div class="hero__controls">
+          <div class="hero__pagination">
+            <span class="hero__current" aria-live="polite">01</span>
+            <span>/</span>
+            <span class="hero__total">03</span>
+          </div>
+          <div class="hero__progress">
+            <div class="hero__progress-bar"></div>
+          </div>
+          <div class="hero__arrows">
+            <button
+              class="hero__control hero__control--prev"
+              type="button"
+              aria-label="Предыдущий слайд"
+              aria-controls="hero-slide"
+            >
+              <img src="./icons/chevron-left.svg" alt="">
+            </button>
+            <button
+              class="hero__control hero__control--next"
+              type="button"
+              aria-label="Следующий слайд"
+              aria-controls="hero-slide"
+            >
+              <img src="./icons/chevron-right.svg" alt="">
+            </button>
+          </div>
+        </div>
+          <img
+            class="hero__image"
+            src="./images/slide_image1.webp"
+            alt="Продукция VERONICA"
+            id="hero-slide"
+          >
+      </div>
+    </section>
+    <section class="products" id="products">
+      <h2 class="products__title">Продукция VERONICA</h2>
+      <p class="products__description">Решения для разных профессиональных задач</p>
+      <!-- Здесь будут карточки продукции -->
+      <ul class="products__list">
+        <li class="products__item">
+          <a class="products__card" href="#">
+            <h3 class="products__name">Биоревитализанты</h3>
+            <img class="products__image" src="./images/category_biorevitalization.webp" alt="Изображение биоревитализантов">
+          </a>
+        </li>
+        <li class="products__item">
+          <a class="products__card" href="#">
+            <h3 class="products__name">Филлеры</h3>
+            <img class="products__image" src="./images/category_fillers.webp" alt="Изображение филлеров">
+          </a>
+        </li>
+        <li class="products__item">
+          <a class="products__card" href="#">
+            <h3 class="products__name">Коллаген</h3>
+            <img class="products__image" src="./images/category_collagen.webp" alt="Изображение коллагена">
+          </a>
+        </li>
+        <li class="products__item">
+          <a class="products__card" href="#">
+            <h3 class="products__name">Уход</h3>
+            <img class="products__image" src="./images/category_care.webp" alt="Изображение ухода за кожей">
+          </a>
+        </li>
+      </ul>
+      <a class="products__all-link" href="#">
+        <span class="products__all">Весь каталог</span>
+        <img class="hero__button-icon" src="./icons/arrow-up-right.svg" alt="" width="18" height="18">
+      </a>
+    </section>
+  </main>
+</body>
+</html>
